@@ -1,27 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+ }
+.logo {
+  font-family: 'Satisfy', cursive;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+.appbar{
+  background-color: #EA4343 !important;
+  box-shadow: none !important;
+}
+
+
+.dynamic-txt {
+  overflow: hidden;
+  margin: 0;
+  display: inline-block;
+}
+.dynamic-txt {
+  list-style: none;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txt b {
+  position: relative;
+}
+.dynamic-txt b::after {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid #393332;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.banner-text span {
+  font-weight: bold;
+  color: #EA4343;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Satisfy', cursive;
+
+}
+
+.banner-text b {
+  display: flex;
+  justify-content: flex-start;
+  color: #393332;
+  font-size: 4rem;
+}
+.banner-text p {
+  display: flex;
+  justify-content: flex-start;
+  color: #393332;
+  font-size: 1.2rem;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes left-mover {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(10px);
+  }
+}
+@-webkit-keyframes right-mover {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(-10px);
+  }
+}
+.banner-right-con img[alt="banner-right-img"] {
+  animation: right-mover 1s ease-in-out infinite alternate;
+}
+
+.large_circle,
+.small_circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid gray;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  /* transform: translate(calc(-50% + 15px), -50%); */
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.small_circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #EA4343;
 }
