@@ -56,12 +56,12 @@ const About = () => {
           </Box>
         </Box>
         <Box width={"60%"}>
-          <Typography variant="h4" fontWeight={'bold'}>I'm  <Typography variant="span" color={'#ea4343'} >Faisal Masud</Typography></Typography>
+          <Typography variant="h4" fontWeight={'bold'}>I am  <Typography variant="span" color={'#ea4343'} >Faisal Masud</Typography></Typography>
           <Typography variant="h5" color={'#ea4343'} fontWeight={'bold'} py={1}><Typography variant="span" color={'black'}>Content</Typography> Writter</Typography>
           <Typography variant="h5" fontWeight={'bold'}  fontSize={20}>Based in London,UK</Typography>
           <Box py={3} lineHeight={2}>
              Hi! My name is
-            Faisal Masud. I am Content Writter, and I'm very passionate and
+            Faisal Masud. I am Content Writter, and I am very passionate and
             dedicated to my work with 10 years experience as a professional
             Content Writter, I have acquired the skills and
             knowledge necessary to make your project a success.
