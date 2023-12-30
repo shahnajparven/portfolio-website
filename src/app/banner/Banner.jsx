@@ -21,7 +21,7 @@ const Banner = ({ scaling }) => {
   }, []);
   return (
     <Box
-      height={"80vh"}
+      height={"auto"}
       width={"100%"}
       display={"flex"}
       flexDirection={{lg:'row', md:'column', sm:'column',xs:'column'}}
@@ -30,7 +30,7 @@ const Banner = ({ scaling }) => {
       gap={5}
       px={{lg:"15",md:'0',xs:'0'}}
     >
-      <Box width={{lg:"50%",md:'100%',xs:'100%'}} mt={{lg:'0',md:100,sm:50, xs:30}}>
+      <Box width={{lg:"50%",md:'100%',xs:'100%'}} >
         <Box
         pl={5}
           className="banner-text"

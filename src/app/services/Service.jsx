@@ -22,11 +22,11 @@ const Service = () => {
         </Typography>
         <Box p={2}>
           <Box
-            my={4}
+            my={{lg:4,md:8,sm:10,xs:12}}
             display="flex"
             justifyContent="center"
             flexDirection={{ lg: "row", md: "row", sm: "column", xs: "column" }}
-            gap={4}
+            gap={{lg:4,md:8,sm:10,xs:12}}
           >
             <Cards
               emoji={<WebIcon fontSize="large" />}
@@ -133,11 +133,11 @@ const Service = () => {
            />
           </Box>
           <Box
-            my={4}
+            my={{lg:4,md:8,sm:10,xs:12}}
             display="flex"
             justifyContent="center"
             flexDirection={{ lg: "row", md: "row", sm: "column", xs: "column" }}
-            gap={4}
+            gap={{lg:4,md:8,sm:10,xs:12}}
           >
             <Cards
               emoji={<SubtitlesIcon fontSize="large" />}

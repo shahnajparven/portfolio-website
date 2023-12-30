@@ -11,13 +11,14 @@ const About = () => {
         pt={10}
         pb={25}
         display={"flex"}
-        flexDirection={{lg:"row",md:'column', sm:'cplumn',xs:"column"}}
+        flexDirection={{ lg: "row", md: "row", sm: "column", xs: "column" }}
         justifyContent={"space-evenly"}
         gap={2}
         width={"100%"}
       >
-        <Box position={"relative"} width={"50%"}>
+        <Box position={"relative"} width={"50%"}  height={{lg:"auto",xs:"90vh"}}>
           <Box
+            // display={{ lg: "flex", md: "none", sm: "none", xs: "none" }}
             width={"15rem"}
             height={"14rem"}
             sx={{ border: 5, borderColor: "white" }}
@@ -25,6 +26,7 @@ const About = () => {
             top="0%"
             left={"20%"}
             zIndex={2}
+            className="effect"
           >
             <Image
               src={aboutPicLeft}
@@ -35,8 +37,7 @@ const About = () => {
             />
           </Box>
           <Box
-            className="banner-right-con wow slideInRight"
-            id="banner-right-con"
+          className="effect"
             width={"18rem"}
             height={"15rem"}
             sx={{ border: 5, borderColor: "white" }}
@@ -55,37 +56,54 @@ const About = () => {
             />
           </Box>
         </Box>
-        <Box width={"60%"}>
-          <Typography variant="h4" fontWeight={'bold'}>I am  <Typography variant="span" color={'#ea4343'} >Faisal Masud</Typography></Typography>
-          <Typography variant="h5" color={'#ea4343'} fontWeight={'bold'} py={1}><Typography variant="span" color={'black'}>Content</Typography> Writter</Typography>
-          <Typography variant="h5" fontWeight={'bold'}  fontSize={20}>Based in London,UK</Typography>
+        <Box width={{ lg: "60%", sm: "100%", xs: "100%" }}>
+          <Typography variant="h4" fontWeight={"bold"}>
+            I am{" "}
+            <Typography variant="span" color={"#ea4343"}>
+              Faisal Masud
+            </Typography>
+          </Typography>
+          <Typography variant="h5" color={"#ea4343"} fontWeight={"bold"} py={1}>
+            <Typography variant="span" color={"black"}>
+              Content
+            </Typography>{" "}
+            Writter
+          </Typography>
+          <Typography variant="h5" fontWeight={"bold"} fontSize={20}>
+            Based in London,UK
+          </Typography>
           <Box py={3} lineHeight={2}>
-             Hi! My name is
-            Faisal Masud. I am Content Writter, and I am very passionate and
-            dedicated to my work with 10 years experience as a professional
-            Content Writter, I have acquired the skills and
+            Hi! My name is Faisal Masud. I am Content Writter, and I am very
+            passionate and dedicated to my work with 10 years experience as a
+            professional Content Writter, I have acquired the skills and
             knowledge necessary to make your project a success.
           </Box>
         </Box>
-        <Box width={"50%"} position={"relative"}>
+        <Box
+          width={"50%"}
+          position={"relative"}
+          display={{ lg: "flex", md: "none", sm: "none", xs: "none" }}
+        >
           <Box
+          className="banner-right-con"
             width={"15rem"}
             height={"14rem"}
-            sx={{ border: 5, borderColor: "white" }}
+            sx={{ border: 8, borderColor: "white" }}
             position={"absolute"}
             top="50%"
             right={"0%"}
             zIndex={2}
           >
+             </Box>
             <Box
               width={"10rem"}
               height={"10rem"}
               backgroundColor="#ea4343"
               position={"absolute"}
-              top="50%"
-              right={"-15%"}
+              top="85%"
+              right={"-8%"}
             ></Box>
-          </Box>
+         
         </Box>
       </Box>
     </Box>

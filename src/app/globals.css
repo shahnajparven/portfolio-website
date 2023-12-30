@@ -86,33 +86,26 @@ body {
   font-size: 1.2rem;
 }
 
-@-webkit-keyframes mover {
-  0% {
+
+.banner-right-con {
+  animation-name: moving;
+  animation-duration:8s;
+  animation-delay: 2s;
+}
+@keyframes moving {
+  /* 0% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(-20px);
-  }
+  } */
+  0% {border-color: white;left:0px;top:0px;}
+  25% {border-color: white;left:200px;top:0px;}
+  50% {border-color: white;left:200px;top:200px;}
+  75% {border-color: white;left:0px;top:200px;}
+  0% {border-color: white;left:0px;top:0px;}
 }
-@-webkit-keyframes left-mover {
-  0% {
-    transform: translatex(0);
-  }
-  100% {
-    transform: translatex(10px);
-  }
-}
-@-webkit-keyframes right-mover {
-  0% {
-    transform: translatex(0);
-  }
-  100% {
-    transform: translatex(-10px);
-  }
-}
-.banner-right-con img[alt="banner-right-img"] {
-  animation: right-mover 1s ease-in-out infinite alternate;
-}
+
 
 .large_circle,
 .small_circle {
@@ -144,11 +137,6 @@ body {
   background: url(../asset/footer-img2.png) no-repeat bottom right;
 } */
 
-
-.banner-right-con img[alt="banner-right-img"] {
-  animation: right-mover 1s ease-in-out infinite alternate;
-}
-
 .expertise-card {
   background: #fff;
   border: 1px solid transparent;
@@ -159,3 +147,15 @@ body {
   transform: translateY(-8px);
   transition: transform 0.4s linear;
 }
+.effect{
+  transition: 0.3s;
+ }
+ .effect:hover{
+   transform: rotate(30deg);
+ }
+ .moving{
+  transition: 0.3s;
+ }
+ .moving :hover{
+  transform: scale(1.05);
+ }
