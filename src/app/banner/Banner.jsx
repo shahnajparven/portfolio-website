@@ -21,6 +21,7 @@ const Banner = ({ scaling }) => {
   }, []);
   return (
     <Box
+    id="banner"
       height={"auto"}
       width={"100%"}
       display={"flex"}

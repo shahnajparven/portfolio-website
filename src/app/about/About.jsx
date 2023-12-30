@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <Box backgroundColor="#F9F5F6" mt={1}>
+    <Box id="about" backgroundColor="#F9F5F6" mt={1}>
       <Box
         px={10}
         pt={10}

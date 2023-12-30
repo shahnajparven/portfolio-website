@@ -8,7 +8,7 @@ import Cards from "../cards/Cards";
 
 const Service = () => {
   return (
-    <Box width="100%" id="expertise" height="auto" py={5} px={10}>
+    <Box width="100%" id="services" height="auto" py={5} px={10}>
       <Box display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -43,14 +43,15 @@ const Service = () => {
             <Cards
               emoji={<WebIcon fontSize="large" />}
               heading="Dissertation"
-              detail="Expert of Frontend development including techniques like Bootstrap,jQuery..."
+              detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing"
               image={"#"}
               skill={"#"}
             />
+           
             <Cards
               emoji={<CodeIcon fontSize="large" />}
               heading="Thesis & Research Paper"
-              detail="For Developing a side used NodeJs, ExpressJs, MongoDB, MySQL database,PHP..."
+              detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing"
               image={"#"}
               skill={"#"}
             />
@@ -65,14 +66,14 @@ const Service = () => {
             <Cards
               emoji={<SubtitlesIcon fontSize="large" />}
               heading="Assignmnts"
-              detail="Figma, Adobe XD using for UI/UX design..."
+              detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing"
               image={"#"}
               skill={"#"}
             />
             <Cards
               emoji={<WebAssetIcon fontSize="large" />}
-              heading="Blog writing"
-              detail="Photoshop and Illustator using for Graphic Design..."
+              heading="Vlog writing"
+              detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing"
               image={"#"}
               skill={"#"}
             />
