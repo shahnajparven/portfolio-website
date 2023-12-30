@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,18 +9,21 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
- }
-.logo {
-  font-family: 'Satisfy', cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
-
-
-.appbar{
-  background-color: #EA4343 !important;
+.container{
+  padding: 5rem 3rem 5rem 3rem;
+}
+.logo,font{
+  font-family: "Satisfy", cursive;
+}
+.font{
+  font-family: "Satisfy", cursive;
+}
+.appbar {
+  background-color: #ea4343 !important;
   box-shadow: none !important;
 }
-
 
 .dynamic-txt {
   overflow: hidden;
@@ -63,12 +66,11 @@ body {
 
 .banner-text span {
   font-weight: bold;
-  color: #EA4343;
+  color: #ea4343;
   font-size: 2.5rem;
   display: flex;
   justify-content: flex-start;
-  font-family: 'Satisfy', cursive;
-
+  font-family: "Satisfy", cursive;
 }
 
 .banner-text b {
@@ -131,5 +133,29 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color: #EA4343;
+  background-color: #ea4343;
+}
+
+/* .footer {
+  background: url(../asset/footer-img.png) no-repeat top left;
+
+}
+.footer2 {
+  background: url(../asset/footer-img2.png) no-repeat bottom right;
+} */
+
+
+.banner-right-con img[alt="banner-right-img"] {
+  animation: right-mover 1s ease-in-out infinite alternate;
+}
+
+.expertise-card {
+  background: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 0 85px 0 #F9F5F6;
+}
+.expertise-card:hover {
+  border-color: #ea4343;
+  transform: translateY(-8px);
+  transition: transform 0.4s linear;
 }
