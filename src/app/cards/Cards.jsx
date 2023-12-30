@@ -1,8 +1,5 @@
 import { Box, Divider, Modal, Typography } from "@mui/material";
 import React, { useState } from "react";
-// import profile from "../../assets/profile.png";
-// import "../cards/Cards.css";
-// import "../Home.css";
 import CloseIcon from '@mui/icons-material/Close';
 import Image from "next/image";
 const style = {

@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import aboutPicLeft from "../../asset/about1.jpeg";
-import aboutPicRifht from "../../asset/about2.jpeg";
 import Image from "next/image";
 
 const About = () => {
