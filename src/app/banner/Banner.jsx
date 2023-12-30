@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import faisal from "../../asset/faisal.jpeg";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -26,7 +26,7 @@ const Banner = ({ scaling }) => {
       display={"flex"}
       flexDirection={{lg:'row', md:'column', sm:'column',xs:'column'}}
       justifyContent={{lg:"space-around",md:'center',sm:'center',xs:'center'}}
-      alignItems={"center"}
+     
       gap={5}
       px={{lg:"15",md:'0',xs:'0'}}
     >
@@ -36,39 +36,30 @@ const Banner = ({ scaling }) => {
           className="banner-text"
           overflow="hidden"
         >
-          <Box className="banner-heading">
+          <Box className="banner-heading" pt={8}>
             <Box className="dynamic-txt">
-              <Box my={3}>
+              <Box>
                 <span>Hello, I Am</span>
               </Box>
               <b>Faisal Masud</b>
             </Box>
-            <p>This is a Content writing freelancing firm.</p>
+            <p>This is a Content writing freelancing firm. Since 2018, Still miles to go.......</p>
+            <Box py={5}>
+            <Typography className="font" fontWeight={'bold'} color={'#ea4343 !important'} fontSize={'1.5rem !important'}>Your Words</Typography>
+            <Typography  className="font" fontWeight={'bold'} color={'#ea4343'} fontSize={'1.5rem !important'}>Our experties</Typography>
+            </Box>
           </Box>
-          {/* <Box display="flex" gap={3} mt={5} justifyContent={{lg:'left',md:'left',sm:'left',xs:'center'}}>
-          <Box
-            px={5}
-            py={1.5}
-            bgcolor="#fca61f"
-            borderRadius="30px"
-            className="hire-me"
-            color='white'
-          >
-            <a href="#contact">Hire Me</a>
-          </Box>
-          <Box mt={1} borderBottom={2} borderColor="#6f34fe">
-            <a href="#project" class="See-btn">
-              See My Work
-            </a>
-          </Box>
-        </Box> */}
+
         </Box>
       </Box>
-      <Box width={{lg:"50%",md:'100%',xs:'100%'}}  p={{lg:10,md:0,sm:0,xs:0}}>
+      <Box  
+      width={{lg:"30rem",md:'100%',xs:'100%'}}
+            height={"30rem"}>
         <Image
           src={faisal}
           width={"100%"}
           height={"100%"}
+          overflow='hidden'
           alt="Picture of the author"
         />
       </Box>

@@ -74,7 +74,7 @@ const About = () => {
           </Typography>
           <Box py={3} lineHeight={2}>
             Hi! My name is Faisal Masud. I am Content Writter, and I am very
-            passionate and dedicated to my work with 10 years experience as a
+            passionate and dedicated to my work with 6 years experience as a
             professional Content Writter, I have acquired the skills and
             knowledge necessary to make your project a success.
           </Box>

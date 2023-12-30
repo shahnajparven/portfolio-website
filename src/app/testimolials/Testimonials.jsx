@@ -1,7 +1,7 @@
 
 
 /* eslint-disable react/jsx-key */
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
  import img1 from "../../asset/about2.jpeg";
 import Carousel from "react-material-ui-carousel";
 
@@ -31,7 +31,7 @@ const customer = [
 ];
 const Testimonials = () => {
   return (
-    <Box px={10} py={2} backgroundColor="white">
+    <Box px={10} py={3} backgroundColor="white">
       {" "}
       <Carousel
         indicatorIconButtonProps={{
@@ -88,7 +88,7 @@ const Testimonials = () => {
               <Typography
                 fontSize={"1.5rem"}
                 fontWeight={"bold"}
-                color={"#09235a"}
+                color={"#ea4343"}
                 className="font"
               >
                 Testimonial
@@ -117,6 +117,7 @@ const Testimonials = () => {
           </Box>
         ))}
       </Carousel>
+      <Divider/>
     </Box>
   );
 };

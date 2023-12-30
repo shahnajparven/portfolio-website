@@ -8,6 +8,7 @@ import Banner from "./banner/Banner";
 import Footer from "./footer/Footer";
 import Service from "./services/Service";
 import Testimonials from "./testimolials/Testimonials";
+import Contact from "./contact/Contact";
 
 export default function Home() {
   return (
@@ -27,6 +28,9 @@ export default function Home() {
       </Box>
       <Box>
         <Testimonials/>
+      </Box>
+      <Box>
+        <Contact/>
       </Box>
       <Box>
         <Footer />
