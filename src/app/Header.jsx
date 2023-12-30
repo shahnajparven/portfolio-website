@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -18,6 +19,7 @@ import Login from "./login/Login";
 
 const drawerWidth = 240;
 const navItems = [
+  
   <Box>
     <a href="#banner">Home</a>
   </Box>,
@@ -32,6 +34,7 @@ const navItems = [
   <a href="#contact">
   Contact</a>
   </Box>,
+
 ];
 
 function DrawerAppBar(props) {
