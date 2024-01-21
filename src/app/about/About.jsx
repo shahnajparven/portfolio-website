@@ -16,7 +16,11 @@ const About = () => {
         gap={2}
         width={"100%"}
       >
-        <Box position={"relative"} width={"50%"}  height={{lg:"auto",xs:"90vh"}}>
+        <Box
+          position={"relative"}
+          width={"50%"}
+          height={{ lg: "auto", xs: "90vh" }}
+        >
           <Box
             // display={{ lg: "flex", md: "none", sm: "none", xs: "none" }}
             width={"15rem"}
@@ -37,7 +41,7 @@ const About = () => {
             />
           </Box>
           <Box
-          className="effect"
+            className="effect"
             width={"18rem"}
             height={"15rem"}
             sx={{ border: 5, borderColor: "white" }}
@@ -73,19 +77,22 @@ const About = () => {
             Based in London,UK
           </Typography>
           <Box py={3} lineHeight={2}>
-            Hi! My name is Faisal Masud. I am Content Writter, and I am very
-            passionate and dedicated to my work with 6 years experience as a
-            professional Content Writter, I have acquired the skills and
-            knowledge necessary to make your project a success.
+            Hello there! I’m Mohammad Faisal Masud, I’ve completed my graduation
+            and post-graduation from the University of Dhaka. I’m the proud
+            founder and creative force behind CreativeZone- a freelance
+            content-writing firm dedicated to transforming ideas into compiling
+            narratives. With a passion for words and a commitment to excellence,
+            I have built a team of ingenious, multi-talented writers ready to
+            elevate your content game.
           </Box>
         </Box>
         <Box
-          width={"50%"}
+          width={"30%"}
           position={"relative"}
           display={{ lg: "flex", md: "none", sm: "none", xs: "none" }}
         >
           <Box
-          className="banner-right-con"
+            className="banner-right-con"
             width={"15rem"}
             height={"14rem"}
             sx={{ border: 8, borderColor: "white" }}
@@ -93,17 +100,15 @@ const About = () => {
             top="50%"
             right={"0%"}
             zIndex={2}
-          >
-             </Box>
-            <Box
-              width={"10rem"}
-              height={"10rem"}
-              backgroundColor="#ea4343"
-              position={"absolute"}
-              top="85%"
-              right={"-8%"}
-            ></Box>
-         
+          ></Box>
+          <Box
+            width={"10rem"}
+            height={"10rem"}
+            backgroundColor="#ea4343"
+            position={"absolute"}
+            top="85%"
+            right={"-8%"}
+          ></Box>
         </Box>
       </Box>
     </Box>

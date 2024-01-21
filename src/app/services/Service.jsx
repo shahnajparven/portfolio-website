@@ -9,10 +9,12 @@ import Cards from "../cards/Cards";
 const Service = () => {
   return (
     <Box width="100%" id="services" height="auto" py={5} px={10}>
-      <Box display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              flexDirection={"column"}>
+      <Box
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        flexDirection={"column"}
+      >
         <Typography
           fontSize={"1.5rem"}
           fontWeight={"bold"}
@@ -21,7 +23,8 @@ const Service = () => {
         >
           Expertise
         </Typography>
-        <Typography py={2}
+        <Typography
+          py={2}
           color="#393332"
           variant="span"
           fontSize={30}
@@ -42,16 +45,16 @@ const Service = () => {
           >
             <Cards
               emoji={<WebIcon fontSize="large" />}
-              heading="Dissertation"
-              detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing"
+              heading="Academic Writing"
+              detail="Thoroughly researched dissertations, assignments, theses, and research papers that reflect academic excellence. "
               image={"#"}
               skill={"#"}
             />
-           
+
             <Cards
               emoji={<CodeIcon fontSize="large" />}
-              heading="Thesis & Research Paper"
-              detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing"
+              heading="Blogging"
+              detail="SEO-optimized and captivating blog posts tailored to your niche, enhancing your online presence. "
               image={"#"}
               skill={"#"}
             />
@@ -64,19 +67,20 @@ const Service = () => {
             gap={{ lg: 4, md: 8, sm: 10, xs: 12 }}
           >
             <Cards
-              emoji={<SubtitlesIcon fontSize="large" />}
-              heading="Assignmnts"
-              detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing"
+              emoji={<WebAssetIcon fontSize="large" />}
+              heading="Business Content"
+              detail="Elevating your brand through polished website content, social media updates, and marketing collateral that leave a lasting impression."
               image={"#"}
               skill={"#"}
             />
             <Cards
-              emoji={<WebAssetIcon fontSize="large" />}
-              heading="Vlog writing"
-              detail="Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur adipisicing"
+              emoji={<SubtitlesIcon fontSize="large" />}
+              heading="Vlogs"
+              detail="Engaging video content that tells your story in a visually appealing and impactful way, capturing the attention of your audience."
               image={"#"}
               skill={"#"}
             />
+            
           </Box>
         </Box>
       </Box>
