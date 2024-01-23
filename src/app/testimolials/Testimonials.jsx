@@ -1,8 +1,6 @@
-
-
 /* eslint-disable react/jsx-key */
 import { Box, Divider, Typography } from "@mui/material";
- import img1 from "../../asset/about2.jpeg";
+import img1 from "../../asset/about2.jpeg";
 import Carousel from "react-material-ui-carousel";
 
 const customer = [
@@ -73,7 +71,7 @@ const Testimonials = () => {
       >
         {customer.map((item) => (
           <Box
-          backgroundColor="white"
+            backgroundColor="white"
             height="70vh"
             display="flex"
             justifyContent="center"
@@ -117,7 +115,7 @@ const Testimonials = () => {
           </Box>
         ))}
       </Carousel>
-      <Divider/>
+      <Divider />
     </Box>
   );
 };

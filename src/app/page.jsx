@@ -9,6 +9,7 @@ import Footer from "./footer/Footer";
 import Service from "./services/Service";
 import Testimonials from "./testimolials/Testimonials";
 import Contact from "./contact/Contact";
+import CreativeZone from "./creativezone/CreativeZone";
 
 export default function Home() {
   return (
@@ -24,13 +25,16 @@ export default function Home() {
         <About />
       </Box>
       <Box>
-      <Service/>
+        <Service />
       </Box>
       <Box>
-        <Testimonials/>
+        <CreativeZone />
       </Box>
       <Box>
-        <Contact/>
+        <Testimonials />
+      </Box>
+      <Box>
+        <Contact />
       </Box>
       <Box>
         <Footer />
