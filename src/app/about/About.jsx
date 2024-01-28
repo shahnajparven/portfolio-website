@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import aboutPicLeft from "../../asset/about1.jpeg";
+import aboutPicLeft from "../../asset/f2.jpeg";
+import aboutPicLeftTop from "../../asset/f4.jpeg";
 import Image from "next/image";
 import './style.css';
 
@@ -32,10 +33,10 @@ const About = () => {
             top="0%"
             left={"20%"}
             zIndex={2}
-            className="effect"
+            // className="effect"
           >
             <Image
-              src={aboutPicLeft}
+              src={aboutPicLeftTop}
               width={"100%"}
               height={"100%"}
               alt="Picture of the author"

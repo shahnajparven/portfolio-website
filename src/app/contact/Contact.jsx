@@ -5,7 +5,7 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const Contact = () => {
   return (
-    <Box id="contact" px={{lg:10,md:10,sm:5,xs:3}} py={2}>
+    <Box id="contact" px={{lg:10,md:10,sm:5,xs:3}} py={2} className='contacts'>
       <Typography
         color="#ea4343"
         variant="span"

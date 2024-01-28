@@ -83,7 +83,7 @@ const Service = () => {
             </Box>
             <Box width={{lg:'50%',sm:'100%',md:"100%",xs:'100%'}}>
               <Cards
-                emoji={<CodeIcon fontSize="large" />}
+                emoji={<SubtitlesIcon fontSize="large" />}
                 heading="Blogging"
                 detail="SEO-optimized and captivating blog posts tailored to your niche, enhancing your online presence. "
                 image={"#"}

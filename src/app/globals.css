@@ -157,11 +157,7 @@ body {
   box-shadow: #ea4343;
   opacity: 100px;
  }
- .about-banner{
-  background-image:linear-gradient(rgba(190, 79, 79, 0.7),rgba(194, 97, 97, 0.7)),url(../asset/faisal.jpeg)!important;
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
- }
+ /* .contacts{
+  background:linear-gradient(rgba(190, 79, 79, 0.7),rgba(194, 97, 97, 0.7));
+
+ } */

@@ -2,6 +2,7 @@
 import { Box, Divider, Typography } from "@mui/material";
 import img1 from "../../asset/about2.jpeg";
 import Carousel from "react-material-ui-carousel";
+import './testimonials.css';
 
 const customer = [
   {
@@ -18,18 +19,18 @@ const customer = [
   },
   {
     img: img1,
-    message: "Lorembyfcgcftyftrdrsgbvjbkj",
-    name: "jbhjhvhgvh",
+    message: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro id, molestiae facere dolorum adipisci rem quibusdam voluptatum delectus! Quod, quam. Earum impedit ipsum atque, fugit beatae voluptatibus molestiae. Illo, veniam.",
+    name: "Sony wins",
   },
   {
     img: img1,
-    message: "Lorembnbvhvhgvhgghcguyfuyfvufufgig",
-    name: "jbhjhvhgvh",
+    message: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro id, molestiae facere dolorum adipisci rem quibusdam voluptatum delectus! Quod, quam. Earum impedit ipsum atque, fugit beatae voluptatibus molestiae. Illo, veniam.",
+    name: "Sony wins",
   },
 ];
 const Testimonials = () => {
   return (
-    <Box px={10} py={3} backgroundColor="white">
+    <Box px={10} py={3} className='testimonials'>
       {" "}
       <Carousel
         indicatorIconButtonProps={{
@@ -71,7 +72,6 @@ const Testimonials = () => {
       >
         {customer.map((item) => (
           <Box
-            backgroundColor="white"
             height="70vh"
             display="flex"
             justifyContent="center"
@@ -109,13 +109,13 @@ const Testimonials = () => {
               <Box fontSize={50} color={"#ea4343"}>
                 ❞
               </Box>
-              <Box>{item.message}</Box>
-              <Box py={1}>{item.name}</Box>
+              <Box color={'#ffff'}>{item.message}</Box>
+              <Box py={1} color={"#ea4343"} fontWeight={'bold'}>{item.name}</Box>
             </Box>
           </Box>
         ))}
       </Carousel>
-      <Divider />
+      {/* <Divider /> */}
     </Box>
   );
 };
