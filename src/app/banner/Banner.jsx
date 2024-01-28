@@ -47,7 +47,7 @@ const Banner = ({ scaling }) => {
             <p>This is a Content writing freelancing firm. Since 2018, Still miles to go.......</p>
             <Box py={5}>
             <Typography  fontWeight={'bold'} color={'#ea4343 !important'} fontSize={'1rem !important'}>Your Words</Typography>
-            <Typography fontWeight={'bold'} color={'#ea4343'} fontSize={'1rem !important'}>Our experties</Typography>
+            <Typography fontWeight={'bold'} color={'#ea4343'} fontSize={'1rem !important'}>Our expertise</Typography>
             </Box>
           </Box>
 

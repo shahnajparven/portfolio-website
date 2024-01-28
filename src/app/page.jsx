@@ -10,6 +10,7 @@ import Service from "./services/Service";
 import Testimonials from "./testimolials/Testimonials";
 import Contact from "./contact/Contact";
 import CreativeZone from "./creativezone/CreativeZone";
+import Blogs from "./blogs/Blogs";
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
       </Box>
       <Box>
         <CreativeZone />
+      </Box>
+      <Box>
+        <Blogs />
       </Box>
       <Box>
         <Testimonials />
