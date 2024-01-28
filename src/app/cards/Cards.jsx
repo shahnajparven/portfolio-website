@@ -23,8 +23,6 @@ const Cards = ({ emoji, heading, detail,skill,image }) => {
     <Box>
       <Box
         className="expertise-card"
-       
-       
          p={4}
         borderRadius={3}
         display="flex"
@@ -33,6 +31,7 @@ const Cards = ({ emoji, heading, detail,skill,image }) => {
         alignItems="center"
         gap={{ lg: 5, xs: 1 }}
         py={2}
+        width={'100%'}
       >
         <Box
           py={{ lg: 5, xs: 2 }}

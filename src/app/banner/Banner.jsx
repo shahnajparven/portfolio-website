@@ -21,22 +21,22 @@ const Banner = ({ scaling }) => {
   }, []);
   return (
     <Box
-    id="banner"
+      id="banner"
       height={"auto"}
       width={"100%"}
       display={"flex"}
-      flexDirection={{lg:'row', md:'column', sm:'column',xs:'column'}}
-      justifyContent={{lg:"space-around",md:'center',sm:'center',xs:'center'}}
-     
+      flexDirection={{ lg: "row", md: "column", sm: "column", xs: "column" }}
+      justifyContent={{
+        lg: "space-around",
+        md: "center",
+        sm: "center",
+        xs: "center",
+      }}
       gap={5}
-      px={{lg:"15",md:'0',xs:'0'}}
+      px={{ lg: "15", md: "0", xs: "0" }}
     >
-      <Box width={{lg:"50%",md:'100%',xs:'100%'}} >
-        <Box
-        pl={5}
-          className="banner-text"
-          overflow="hidden"
-        >
+      <Box width={{ lg: "50%", md: "100%", xs: "100%" }}>
+        <Box pl={5} className="banner-text" overflow="hidden">
           <Box className="banner-heading" pt={8}>
             <Box className="dynamic-txt">
               <Box>
@@ -44,23 +44,35 @@ const Banner = ({ scaling }) => {
               </Box>
               <b>Faisal Masud</b>
             </Box>
-            <p>This is a Content writing freelancing firm. Since 2018, Still miles to go.......</p>
+            <p>
+              This is a Content writing freelancing firm. Since 2018, Still
+              miles to go.......
+            </p>
             <Box py={5}>
-            <Typography  fontWeight={'bold'} color={'#ea4343 !important'} fontSize={'1rem !important'}>Your Words</Typography>
-            <Typography fontWeight={'bold'} color={'#ea4343'} fontSize={'1rem !important'}>Our expertise</Typography>
+              <Typography
+                fontWeight={"bold"}
+                color={"#ea4343 !important"}
+                fontSize={"1rem !important"}
+              >
+                Your Words
+              </Typography>
+              <Typography
+                fontWeight={"bold"}
+                color={"#ea4343"}
+                fontSize={"1rem !important"}
+              >
+                Our expertise
+              </Typography>
             </Box>
           </Box>
-
         </Box>
       </Box>
-      <Box  
-      width={{lg:"30rem",md:'100%',xs:'100%'}}
-            height={"30rem"}>
+      <Box width={{ lg: "30rem", md: "100%", xs: "100%" }} height={"30rem"}>
         <Image
           src={faisal}
           width={"100%"}
           height={"100%"}
-          overflow='hidden'
+          overflow="hidden"
           alt="Picture of the author"
         />
       </Box>

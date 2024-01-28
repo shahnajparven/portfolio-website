@@ -2,7 +2,7 @@
 import Link from "next/link";
 import About from "./about/About";
 import { navigate } from "next/navigation";
-import Header from "./Header";
+
 import { Box, Button, Toolbar } from "@mui/material";
 import Banner from "./banner/Banner";
 import Footer from "./footer/Footer";
@@ -15,10 +15,7 @@ import Blogs from "./blogs/Blogs";
 export default function Home() {
   return (
     <Box>
-      <Box>
-        <Header />
-        <Toolbar />
-      </Box>
+      
       <Box>
         <Banner />
       </Box>
@@ -28,9 +25,9 @@ export default function Home() {
       <Box>
         <Service />
       </Box>
-      <Box>
+      {/* <Box>
         <CreativeZone />
-      </Box>
+      </Box> */}
       <Box>
         <Blogs />
       </Box>

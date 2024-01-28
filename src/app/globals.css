@@ -133,7 +133,7 @@ body {
 .expertise-card {
   background: #fff;
   border: 1px solid transparent;
-  box-shadow: 0 0 85px 0 #F9F5F6;
+  box-shadow: 0 0 85px 0 #cf7272;
 }
 .expertise-card:hover {
   border-color: #ea4343;
@@ -156,4 +156,12 @@ body {
  .contact{
   box-shadow: #ea4343;
   opacity: 100px;
+ }
+ .about-banner{
+  background-image:linear-gradient(rgba(190, 79, 79, 0.7),rgba(194, 97, 97, 0.7)),url(../asset/faisal.jpeg)!important;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
  }

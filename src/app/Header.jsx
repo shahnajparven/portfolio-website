@@ -1,3 +1,5 @@
+
+'use client';
 /* eslint-disable react/jsx-key */
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";

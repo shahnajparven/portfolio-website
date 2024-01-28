@@ -2,10 +2,11 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import aboutPicLeft from "../../asset/about1.jpeg";
 import Image from "next/image";
+import './style.css';
 
 const About = () => {
   return (
-    <Box id="about" backgroundColor="#F9F5F6" mt={1}>
+    <Box id="about" className="abouts" mt={1}>
       <Box
         px={10}
         pt={10}
@@ -17,12 +18,13 @@ const About = () => {
         width={"100%"}
       >
         <Box
+        display={{ lg: "flex", md: "none", sm: "none", xs: "none" }}
           position={"relative"}
           width={"50%"}
           height={{ lg: "auto", xs: "90vh" }}
         >
           <Box
-            // display={{ lg: "flex", md: "none", sm: "none", xs: "none" }}
+           
             width={"15rem"}
             height={"14rem"}
             sx={{ border: 5, borderColor: "white" }}
@@ -47,7 +49,7 @@ const About = () => {
             sx={{ border: 5, borderColor: "white" }}
             position={"absolute"}
             top="30%"
-            left={"-18%"}
+            left={"-5%"}
             zIndex={5}
           >
             <Image
@@ -61,14 +63,14 @@ const About = () => {
           </Box>
         </Box>
         <Box width={{ lg: "60%", sm: "100%", xs: "100%" }}>
-          <Typography variant="h4" fontWeight={"bold"}>
+          <Typography variant="h4" fontWeight={"bold"} color='#ffff'>
             I am{" "}
             <Typography variant="span" color={"#ea4343"}>
               Faisal Masud
             </Typography>
           </Typography>
           <Typography variant="h5" color={"#ea4343"} fontWeight={"bold"} py={1}>
-            <Typography variant="span" color={"black"}>
+            <Typography variant="span" color='#ffff'>
               Content
             </Typography>{" "}
             Writter
@@ -76,7 +78,7 @@ const About = () => {
           <Typography variant="h5" fontWeight={"bold"} fontSize={20}>
             Based in London,UK
           </Typography>
-          <Box py={3} lineHeight={2}>
+          <Box py={3} lineHeight={2} color='#ffff'>
             Hello there! I’m Mohammad Faisal Masud, I’ve completed my graduation
             and post-graduation from the University of Dhaka. I’m the proud
             founder and creative force behind CreativeZone- a freelance

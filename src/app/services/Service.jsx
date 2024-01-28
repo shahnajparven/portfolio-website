@@ -37,50 +37,59 @@ const Service = () => {
 
         <Box p={2}>
           <Box
+            width={"100%"}
             my={{ lg: 4, md: 8, sm: 10, xs: 12 }}
             display="flex"
             justifyContent="center"
             flexDirection={{ lg: "row", md: "row", sm: "column", xs: "column" }}
             gap={{ lg: 4, md: 8, sm: 10, xs: 12 }}
           >
+            <Box width={{lg:'50%',sm:'100%',md:"100%",xs:'100%'}}>
             <Cards
-              emoji={<WebIcon fontSize="large" />}
-              heading="Academic Writing"
-              detail="Thoroughly researched dissertations, assignments, theses, and research papers that reflect academic excellence. "
-              image={"#"}
-              skill={"#"}
-            />
-
-            <Cards
-              emoji={<CodeIcon fontSize="large" />}
-              heading="Blogging"
-              detail="SEO-optimized and captivating blog posts tailored to your niche, enhancing your online presence. "
-              image={"#"}
-              skill={"#"}
-            />
+                emoji={<WebIcon fontSize="large" />}
+                heading="Academic Writing"
+                detail="Thoroughly researched dissertations, assignments, theses, and research papers that reflect academic excellence. "
+                image={"#"}
+                skill={"#"}
+              />
+             
+            </Box>
+            <Box width={{lg:'50%',sm:'100%',md:"100%",xs:'100%'}}>
+              <Cards
+                emoji={<WebAssetIcon fontSize="large" />}
+                heading="Business Content"
+                detail="Your brand through polished website content,social media updates, and marketing collateral that leave a lasting impression."
+                image={"#"}
+                skill={"#"}
+              />
+            </Box>
           </Box>
           <Box
+            width={"100%"}
             my={{ lg: 4, md: 8, sm: 10, xs: 12 }}
             display="flex"
             justifyContent="center"
             flexDirection={{ lg: "row", md: "row", sm: "column", xs: "column" }}
             gap={{ lg: 4, md: 8, sm: 10, xs: 12 }}
           >
+            <Box width={{lg:'50%',sm:'100%',md:"100%",xs:'100%'}}>
             <Cards
-              emoji={<WebAssetIcon fontSize="large" />}
-              heading="Business Content"
-              detail="Elevating your brand through polished website content, social media updates, and marketing collateral that leave a lasting impression."
-              image={"#"}
-              skill={"#"}
-            />
-            <Cards
-              emoji={<SubtitlesIcon fontSize="large" />}
-              heading="Vlogs"
-              detail="Engaging video content that tells your story in a visually appealing and impactful way, capturing the attention of your audience."
-              image={"#"}
-              skill={"#"}
-            />
-            
+                emoji={<SubtitlesIcon fontSize="large" />}
+                heading="Vlogs"
+                detail="Engaging video content that tells your story in a visually appealing and impactful way, capturing the attention of your audience."
+                image={"#"}
+                skill={"#"}
+              />
+            </Box>
+            <Box width={{lg:'50%',sm:'100%',md:"100%",xs:'100%'}}>
+              <Cards
+                emoji={<CodeIcon fontSize="large" />}
+                heading="Blogging"
+                detail="SEO-optimized and captivating blog posts tailored to your niche, enhancing your online presence. "
+                image={"#"}
+                skill={"#"}
+              />
+            </Box>
           </Box>
         </Box>
       </Box>
