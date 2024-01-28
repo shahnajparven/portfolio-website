@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import "./blogs.css";
 import { Box, Typography } from "@mui/material";
 
 export const Card = ({ img, title, details }) => {
