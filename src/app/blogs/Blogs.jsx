@@ -1,8 +1,10 @@
 import "./blogs.css";
 import { Card } from "../blogs/Card";
-import img1 from "../../asset/img1.jpg";
-import img2 from "../../asset/img2.jpg";
-import img3 from "../../asset/img3.jpg";
+import img1 from "../../asset/b1.jpg";
+import img2 from "../../asset/b2.jpg";
+import img3 from "../../asset/b3.jpg";
+import img4 from "../../asset/b4.jpg";
+import img5 from "../../asset/b5.jpg";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { Box, Typography } from "@mui/material";
@@ -63,7 +65,7 @@ const Blogs = () => {
                     </Box>
                     <Box className="blog-card">
                       <Card
-                        img={img2}
+                        img={img4}
                         title="Creative Brilliance"
                         details="At the heart of our firm is a team of creative minds dedicated to breathing life into your ideas. From crafting engaging blog posts to producing dynamic vlogs, we infuse creativity into every piece of content, ensuring it stands out in the digital landscape."
                       />
@@ -86,7 +88,7 @@ const Blogs = () => {
                   <Box>
                     <Box className="blog-card">
                       <Card
-                        img={img3}
+                        img={img2}
                         title="Proven Track Record"
                         details="With a history of successful projects and satisfied clients, CreativeZone has earned a reputation for delivering high-quality content that resonates with the audience since 2018. Our commitment to excellence is reflected in the success stories of those we’ve had the privilege to work with."
                       />
@@ -100,7 +102,7 @@ const Blogs = () => {
                     </Box>
                     <Box className="blog-card">
                       <Card
-                        img={img3}
+                        img={img5}
                         title="Client-Centric Approach"
                         details="We believe in building lasting relationships with our clients. Your goals, vision, and satisfaction are our top priorities. Our client-centric approach ensures that every piece of content we create aligns seamlessly with your objectives."
                       />
