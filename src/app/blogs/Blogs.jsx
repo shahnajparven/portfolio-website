@@ -1,6 +1,6 @@
 import "./blogs.css";
 import { Card } from "../blogs/Card";
-import img1 from "../../asset/b1.jpg";
+import img1 from "../../asset/b6.jpg";
 import img2 from "../../asset/b2.jpg";
 import img3 from "../../asset/b3.jpg";
 import img4 from "../../asset/b4.jpg";
@@ -36,7 +36,7 @@ const Blogs = () => {
     <Box className="blog">
       <Box className="container">
         <Box className="blog-title">
-          <Typography variant="h5" py={3} fontWeight={"bold"}>
+          <Typography variant="p" py={3} fontWeight={"bold"} fontSize={25}>
             Why Choose CreativeZone?
           </Typography>
           <Box className="hr-line" />
@@ -124,7 +124,7 @@ const Blogs = () => {
           </Box>
 
           <Box width={{ lg: "40%", sm: "100%", md: "100%", xs: "100%" }}>
-            <Typography variant="h5" py={3} fontWeight={"bold"}>
+            <Typography variant="p" py={3} fontWeight={"bold"} fontSize={25} lineHeight={2}>
               Task Completing rate{" "}
             </Typography>
             <p>
@@ -133,7 +133,7 @@ const Blogs = () => {
               community.
             </p>
             <Box className="rating-box" display={"flex"}>
-              <Typography py={1} width={"60%"} fontWeight={"bold"}>
+              <Typography py={1} width={"60%"} fontWeight={"bold"}   variant="p">
                 Academic Writing
               </Typography>
               <Box className="rating-bar" mt={2}>
@@ -144,6 +144,7 @@ const Blogs = () => {
             </Box>
             <Box className="rating-box" display={"flex"}>
               <Typography
+              variant="p"
                 py={1}
                 width={"60%"}
                 fontWeight={"bold"}
@@ -159,6 +160,7 @@ const Blogs = () => {
             </Box>
             <Box className="rating-box" display={"flex"}>
               <Typography
+                variant="p"
                 py={1}
                 width={"60%"}
                 fontWeight={"bold"}
@@ -174,6 +176,7 @@ const Blogs = () => {
             </Box>
             <Box className="rating-box" display={"flex"}>
               <Typography
+                variant="p"
                 py={1}
                 width={"60%"}
                 fontWeight={"bold"}

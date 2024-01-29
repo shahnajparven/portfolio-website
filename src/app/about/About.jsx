@@ -3,7 +3,7 @@ import React from "react";
 import aboutPicLeft from "../../asset/f2.jpeg";
 import aboutPicLeftTop from "../../asset/f4.jpeg";
 import Image from "next/image";
-import './style.css';
+import "./style.css";
 
 const About = () => {
   return (
@@ -19,13 +19,12 @@ const About = () => {
         width={"100%"}
       >
         <Box
-        display={{ lg: "flex", md: "none", sm: "none", xs: "none" }}
+          display={{ lg: "flex", md: "none", sm: "none", xs: "none" }}
           position={"relative"}
           width={"50%"}
           height={{ lg: "auto", xs: "90vh" }}
         >
           <Box
-           
             width={"15rem"}
             height={"14rem"}
             sx={{ border: 5, borderColor: "white" }}
@@ -64,22 +63,34 @@ const About = () => {
           </Box>
         </Box>
         <Box width={{ lg: "60%", sm: "100%", xs: "100%" }}>
-          <Typography variant="h4" fontWeight={"bold"} color='#ffff'>
+          <Typography
+            variant="p"
+            fontWeight={"bold"}
+            color="#ffff"
+            fontSize={30}
+          >
             I am{" "}
-            <Typography variant="span" color={"#ea4343"}>
-              Faisal Masud
+            <Typography variant="p" color={"black"}>
+              Mohammad Faisal Masud
             </Typography>
           </Typography>
-          <Typography variant="h5" color={"#ea4343"} fontWeight={"bold"} py={1}>
-            <Typography variant="span" color='#ffff'>
-              Content
-            </Typography>{" "}
-            Writter
+          <br/>
+          <Typography
+            variant="p"
+            color="#ffff"
+            fontWeight={"bold"}
+            py={1}
+            fontSize={20}
+            lineHeight={2}
+          >
+            {/* <Typography variant="span" color='#ffff'> */}
+            Owner of CreativeZone
           </Typography>
-          <Typography variant="h5" fontWeight={"bold"} fontSize={20}>
+          <br/>
+          <Typography variant="p" fontWeight={"bold"} fontSize={18} lineHeight={2}>
             Based in London,UK
           </Typography>
-          <Box py={3} lineHeight={2} color='#ffff'>
+          <Box py={3} lineHeight={2} color="#ffff">
             Hello there! I’m Mohammad Faisal Masud, I’ve completed my graduation
             and post-graduation from the University of Dhaka. I’m the proud
             founder and creative force behind CreativeZone- a freelance

@@ -1,11 +1,11 @@
-import { Box, Button, Stack, TextField, Typography } from "@mui/material";
+import { Box, Button, Divider, Stack, TextField, Typography } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const Contact = () => {
   return (
-    <Box id="contact" px={{lg:10,md:10,sm:5,xs:3}} py={2} className='contacts'>
+    <Box id="contact" px={{lg:10,md:10,sm:5,xs:3}} py={2} className='contacts' pt={5}>
       <Typography
         color="#ea4343"
         variant="span"
@@ -57,12 +57,25 @@ const Contact = () => {
                 <LocationOnIcon fontSize="small" />
               </Box>
               <Box>
-                <Typography variant="h5" fontSize={16} fontWeight="bold">
+                <Typography variant="p" fontSize={18} fontWeight="bold">
                   Address:
                 </Typography>
-                <Typography variant="span" lineHeight={1.4}>
-                  Rampura,Dhaka.
+               
+                <Box>
+                <Typography variant="p" fontSize={15} lineHeight={2}>(AAHMED BORHAN UDDIN)</Typography>
+                <br/>
+                <Typography variant="span" lineHeight={1.4} fontSize={15}>
+                Street-9, Orsett Terrace Essex, Woodford Green- IG8 7BA, United Kingdom.
                 </Typography>
+                </Box>
+                <Divider color='white' sx={{my:1}}/>
+                <Box>
+                <Typography variant="p" fontSize={15} lineHeight={2}>(Mr MD)</Typography>
+                <br/>
+                <Typography variant="span" lineHeight={1.4} fontSize={15}>
+                10 Doric Close, Beswick, Manchester M113QD, United Kingdom.
+                </Typography>
+                </Box>
               </Box>
             </Box>
             <Box py={2} display="flex" gap={3}>
@@ -79,14 +92,15 @@ const Contact = () => {
                 <EmailIcon fontSize="small" />
               </Box>
               <Box>
-                <Typography variant="h5" fontSize={16} fontWeight="bold">
+                <Typography variant="p" fontSize={18} fontWeight="bold">
                   Email:
                 </Typography>
-
+                <Box>
                 <Typography variant="span" lineHeight={1.4}>
                   faisalmasud3419@gmail.com <br/>
                   workorders.creativezone.rafi@gmail.com
                 </Typography>
+                </Box>
               </Box>
             </Box>
             <Box py={3} display="flex" gap={3}>
@@ -103,13 +117,15 @@ const Contact = () => {
                 <LocalPhoneIcon fontSize="small" />
               </Box>
               <Box>
-                <Typography variant="h5" fontSize={16} fontWeight="bold">
+                <Typography variant="p" fontSize={18} fontWeight="bold">
                   Phone:
                 </Typography>
+                <Box>
 
                 <Typography variant="span" lineHeight={1.4}>
-                  +880 1829501620
+                  +880 1521498607
                 </Typography>
+                </Box>
               </Box>
             </Box>
           </Box>
@@ -194,6 +210,7 @@ const Contact = () => {
                 <Stack sx={{
                       border: 1,
                       borderColor: "#ea4343",
+                      minRows:10
                 }}>
               <textarea
                 sx={{
@@ -202,6 +219,7 @@ const Contact = () => {
                       borderRadius: 8,
                       border: 1,
                       borderColor: "#ea4343",
+                      minRows:10
                     },
                   },
                 }}

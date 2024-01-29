@@ -42,14 +42,16 @@ const Banner = ({ scaling }) => {
               <Box>
                 <span>Hello, I Am</span>
               </Box>
-              <b>Faisal Masud</b>
+              <b>Mohammad Faisal Masud</b>
             </Box>
+            <p>Meet the Visionary Behind CreativeZone: Crafting Excellence in Content.</p>
             <p>
               This is a Content writing freelancing firm. Since 2018, Still
               miles to go.......
             </p>
             <Box py={5}>
               <Typography
+              variant="p"
                 fontWeight={"bold"}
                 color={"#ea4343 !important"}
                 fontSize={"1rem !important"}
@@ -57,8 +59,9 @@ const Banner = ({ scaling }) => {
                 Your Words
               </Typography>
               <Typography
+               variant="p"
                 fontWeight={"bold"}
-                color={"#ea4343"}
+                color={"black !important"}
                 fontSize={"1rem !important"}
               >
                 Our expertise

@@ -16,10 +16,11 @@ export const Card = ({ img, title, details }) => {
           />
         </Box>
         <Box className="card-title" width={{lg:'70%',sm:'100%',md:"100%",xs:'100%'}} px={2}>
-          <Typography variant="h5" fontSize={18} fontWeight={"bold"} py={1}>
+          <Typography variant="p" fontSize={18} fontWeight={"bold"} py={1} lineHeight={2}>
             {title}
           </Typography>
-          <Typography fontSize={15}>{details}</Typography>
+          <br/>
+          <Typography variant="p" fontSize={15} >{details}</Typography>
         </Box>
       </Box>
     </Box>

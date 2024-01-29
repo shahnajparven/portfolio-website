@@ -86,7 +86,7 @@ const Testimonials = () => {
               <Typography
                 fontSize={"1.5rem"}
                 fontWeight={"bold"}
-                color={"#ea4343"}
+                color={"#fff"}
                 className="font"
               >
                 Testimonial

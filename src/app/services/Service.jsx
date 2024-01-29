@@ -1,7 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import WebIcon from "@mui/icons-material/Web";
-import CodeIcon from "@mui/icons-material/Code";
 import SubtitlesIcon from "@mui/icons-material/Subtitles";
 import WebAssetIcon from "@mui/icons-material/WebAsset";
 import Cards from "../cards/Cards";
@@ -49,8 +48,8 @@ const Service = () => {
                 emoji={<WebIcon fontSize="large" />}
                 heading="Academic Writing"
                 detail="Thoroughly researched dissertations, assignments, theses, and research papers that reflect academic excellence. "
-                image={"#"}
-                skill={"#"}
+                // image={"#"}
+                skill={"dissertations, assignments, theses, and research papers"}
               />
              
             </Box>
@@ -59,7 +58,7 @@ const Service = () => {
                 emoji={<WebAssetIcon fontSize="large" />}
                 heading="Business Content"
                 detail="Your brand through polished website content,social media updates, and marketing collateral that leave a lasting impression."
-                image={"#"}
+                // image={"#"}
                 skill={"#"}
               />
             </Box>
@@ -77,7 +76,7 @@ const Service = () => {
                 emoji={<SubtitlesIcon fontSize="large" />}
                 heading="Vlogs"
                 detail="Engaging video content that tells your story in a visually appealing and impactful way, capturing the attention of your audience."
-                image={"#"}
+                // image={"#"}
                 skill={"#"}
               />
             </Box>
@@ -86,7 +85,7 @@ const Service = () => {
                 emoji={<SubtitlesIcon fontSize="large" />}
                 heading="Blogging"
                 detail="SEO-optimized and captivating blog posts tailored to your niche, enhancing your online presence. "
-                image={"#"}
+                // image={"#"}
                 skill={"#"}
               />
             </Box>
